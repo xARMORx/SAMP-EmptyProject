@@ -50,6 +50,7 @@ list(APPEND ${PROJECT_NAME}_LIST "${CMAKE_CURRENT_SOURCE_DIR}/imgui/backends/img
 
 add_library(${PROJECT_NAME} SHARED)
 target_sources(${PROJECT_NAME} PRIVATE
+	${${PROJECT_NAME}_LIST}
 	src/main.cpp
 )
 
